@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Message Example</title>
+</head>
+<body>
+  <button onclick="showMessage()">Show Message</button>
+  <div id="output"></div>
+    <button onclick="showLoadedData()">Load Data!</button>
+  <script>
+    function showMessage() {
+      document.getElementById("output").innerText = "Hello from venkat!";
+    }
+    function showLoadedData(){
+        setTimeout(()=>{
+            document.getElementById("output").innerText="User Loaded: Venkat";
+        },2000);
+    }
+  </script>
+</body>
+</html>
